@@ -1,0 +1,3 @@
+rootProject.name = "Koinot Module"
+include ':app'
+include ':koinot_library'
