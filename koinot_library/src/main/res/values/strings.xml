@@ -1,1 +1,3 @@
-<resources>koinot</resources>
+<resources>koinot
+    <string name="is_not_empty">Ma\'lumottlarni kriting</string>
+</resources>
