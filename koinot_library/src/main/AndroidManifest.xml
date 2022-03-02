@@ -2,8 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="uz.ssd.koinot_library">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application>
-        <activity android:name=".EmptyActivity"/>
+        <activity android:name=".EmptyActivity" />
     </application>
 
 </manifest>

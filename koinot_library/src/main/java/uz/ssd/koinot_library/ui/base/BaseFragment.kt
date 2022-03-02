@@ -1,6 +1,8 @@
 package uz.ssd.koinot_library.ui.base
 
+import android.content.Context
 import android.os.Bundle
+import android.os.Vibrator
 import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
@@ -46,9 +48,7 @@ abstract class BaseFragment : Fragment() {
         return if (et.text.toString().isEmpty()) {
             if (v == null) et.setError(et.context.getString(R.string.is_not_empty), null)
             else {
-//                (requireContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator).vibrate(
-//                    100
-//                )
+                (requireContext().getSystemService(Context.VIBRATOR_SERVICE) as Vibrator).vibrate(100)
                 et.startAnimation(AnimationUtils.loadAnimation(requireContext(), R.anim.shake))
                 v.error = et.context.getString(R.string.is_not_empty)
                 v.errorIconDrawable = null
